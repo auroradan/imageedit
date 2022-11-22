@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Week 4 ImageEdit</title>
+  <link rel="stylesheet" href="Week 4 imageedit.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js" >
+</script>
+
+<html>
+  <h1>Image Editor</h1>
+  <div>
+    <canvas id="can">
+    </canvas>
+  </div>
+  <div>
+    <h3>Load Image</h3>
+    Upload an image - 
+    <input id="finput" type="file" multiple="false" accept= "image*/" value="Browse" onchange="upload()"/>
+  </div>
+  <div>
+    <h3>Choose Color!</h3>
+    <input id="red" type="button" value="Red Image" onclick="makeRed()"/>
+            <input id="green" type="button" value="Green Image" onclick="makeGreen()"/>
+        <input id="blue" type="button" value="Blue Image" onclick="makeBlue()"/>
+  </div>
+  <div>
+    <h3>Choose Filter!</h3>
+    <input id="reset" type="button" value="Reset Image" onclick="resetImg()"/>
+    <input id="gscale" type="button" value="Grayscale Image" onclick="makeGray()"/>
+    <input id="blur" type="button" value="Blur Image" onclick="blurImg()"/>
+  </div>
+<!-- partial -->
+  <script  src="Week 4 imageedit.js"></script>
+
+</body>
+</html>
